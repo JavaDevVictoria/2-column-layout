@@ -1,0 +1,90 @@
+body, 
+html { 
+margin:0; 
+padding:0; 
+color:#000; 
+background:#E3E0D1; 
+overflow: hidden;
+} 
+
+#wrapper {
+vertical-align : middle;
+background-color: #FFFFF0; 
+font-family:arial;
+width: 750px;
+margin:0 auto;
+}
+
+#header {
+zoom: 1;  /* necessary to fix an IE5-7 bug which prevented the gradient from displaying */
+vertical-align : middle;
+padding:5px 10px; 
+text-align: center;
+color: #FFFFCC;
+background: #A60C02;  /* if a browser doesn't support gradients, this solid background colour will be displayed instead */
+background: -moz-linear-gradient(top, #A60C02, #FF0000);  /* FF3.6 */
+background: -webkit-gradient(linear, left top, left bottom, from(#A60C02), to(#FF0000)); /* Saf4+, Chrome */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#A60C02, endColorstr=#FF0000);  /* IE6,IE7 */
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#A60C02', endColorstr='#FF0000')"; /* IE8 */
+}
+
+#left_sidebar {
+width: 230px;
+background-color: #FFFFCC;
+clear: both;
+float: left;
+padding:10px; 
+padding-bottom: 20010px;  /* X + padding-bottom */
+margin-bottom: -20000px;  /* X */
+}
+
+#left_sidebar ul {
+margin: 0;
+padding: 0;
+}
+
+#left_sidebar ul li {
+list-style-type: none;
+display: block;
+color: #FFFFFF;
+text-align: center;
+}
+
+#left_sidebar li a {
+display: block;
+padding: 5px 10px;
+background-color: #003366;
+color: #FFFFFF;
+border-bottom: 1px solid #fff;
+text-decoration:none;
+}
+
+#left_sidebar li:hover a{
+background-color: #338833;
+color: #FFFFCC;
+} 
+
+#main_column {
+padding:10px; 
+float: left;
+width: 480px;
+padding-bottom: 20010px;  /* X + padding-bottom */
+margin-bottom: -20000px;  /* X */
+}
+
+#footer {
+clear: both;
+text-align: center;
+background-color: #FFFFCC;
+padding:5px 10px;
+}
+
+#footer p { 
+margin:0; 
+position: relative;
+} 
+
+* html #footer { 
+height:1px; 
+} 
+
